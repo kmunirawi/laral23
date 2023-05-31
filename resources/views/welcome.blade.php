@@ -992,7 +992,8 @@
                 </div>
                 <div>
                     {{-- <h2><a href="r4">CODE</a></h2> --}}
-                    <h2><a href="{{ route('route4')}}">CODE</a></h2>
+                    {{-- <h2><a href="{{ route('route4')}}">CODE</a></h2> --}}
+                    <h2><a href="{{route('users.function')}}">TEST NAMED CODE</a></h2>
                 </div>
             </div>
 

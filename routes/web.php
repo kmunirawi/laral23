@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -42,3 +43,13 @@ Route::prefix('admin')->group(function(){
     Route::view('profile', 'profile');
     Route::view('reset', 'reset');
 });
+
+
+// Route::get('users', [UserController::class, 'index'])->name('users.function');
+// Route::get('createUser', [UserController::class, 'create']);
+Route::resource('users', UserController::class)->names([
+    'create' => 'new'
+]);
+// users.index !! users.create
+
+Route::get('changePassword', [UserController::class, 'changePassword'])->name('users.changePassword');

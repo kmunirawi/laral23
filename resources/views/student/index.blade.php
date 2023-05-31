@@ -1,6 +1,6 @@
 <h2>Student Index</h2>
-{{$name}}
+{{-- {{$name}} --}}
 
 @php
-  echo $dept  
+  // echo $dept  
 @endphp
